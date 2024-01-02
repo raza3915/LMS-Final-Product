@@ -41,11 +41,12 @@ CREATE TABLE `add_book` (
 --
 
 INSERT INTO `add_book` (`BookName`, `BookId`, `AuthorId`, `AuthorName`, `PublishYear`, `PublisherName`) VALUES
-('Clean Code', '01', '22', 'Kashif', 2000, 'Taj Publishers'),
-('Refactoring', '02', '33', 'Bilal', 2001, 'Java Publishers'),
-('Code Complete', '03', '44', 'Abdullah', 2002, 'Attique Publishers'),
-('Effective Java', '04', '55', 'Ahmed', 2003, 'Java Publishers'),
-('Programming Pearls', '05', '66', 'Syed Ahtasham', 2004, 'Pak Publishers');
+('Data Structures', '01', '22', 'Ali', 2010, 'Ali Publishers'),
+('OOP', '02', '33', 'Asad', 2009, 'Meta Publishers'),
+('Learn Python', '03', '44', 'Abdullah', 2011, 'Karachi Publishers'),
+('Scrum Master', '04', '55', 'Ahmed', 2017, 'Karachi Publishers'),
+('Agile Development', '05', '66', 'Ahmed Akhtar', 2021, 'Meta Publishers');
+
 
 -- --------------------------------------------------------
 
@@ -68,11 +69,11 @@ CREATE TABLE `issue_book` (
 --
 
 INSERT INTO `issue_book` (`BookName`, `BookId`, `AuthorName`, `IssueDate`, `ReturnDate`, `ApplicantName`, `ApplicantContactNumber`) VALUES
-('Clean Code', '01', 'Kashif', '2005-10-22', '2005-12-22', 'Syed Ahtasham', '03112628826'),
-('Refactoring', '02', 'Bilal', '2006-08-17', '2006-09-22', 'Abdullah', '03112628826'),
-('Code Complete', '03', 'Abdullah', '2008-10-15', '2008-11-22', 'Rafay', '090078601'),
-('Effective Java', '04', 'Ahmed', '2009-04-15', '2009-05-12', 'Moiz', '03112567879'),
-('Programming Pearls', '05', 'Syed Ahtasham', '2010-05-20', '2010-06-17', 'Sameer', '03458798672');
+('Data Structures', '01', 'Ali', '2021-12-21', '2022-12-21', 'Owais', '03111111222'),
+('OOP', '02', 'Asad', '2022-08-22', '2022-09-22', 'Noor ul Huda', '03111111333'),
+('Learn Python', '03', 'Abdullah', '2020-10-22', '2020-11-22', 'Rafay', '03111111444'),
+('Scrum Master', '04', 'Ahmed', '2023-04-01', '2023-05-01', 'Huzaifa', '03111111555'),
+('Agile Development', '05', 'Ahmed Akhtar', '2021-05-17', '2021-06-17', 'Sanaullah', '03111111000');
 
 -- --------------------------------------------------------
 
@@ -93,11 +94,11 @@ CREATE TABLE `return_book` (
 --
 
 INSERT INTO `return_book` (`BookName`, `BookId`, `ReturnDate`, `ApplicantName`, `ApplicantId`) VALUES
-('Clean Code', '01', '2005-12-22', 'Syed Ahtasham', '1001'),
-('Refactoring', '02', '2006-09-22', 'Abdullah', '1002'),
-('Code Complete', '03', '2008-11-22', 'Rafay', '1003'),
-('Effective Java', '04', '2009-05-12', 'Moiz', '1004'),
-('Programming Pearls', '05', '2010-06-17', 'Sameer', '1005');
+('Data Structures', '01', '2022-12-21', 'Owais', '1001'),
+('OOP', '02', '2022-09-22', 'Noor ul Huda', '1002'),
+('Learn Python', '03', '2020-11-22', 'Rafay', '1003'),
+('Scrum Master', '04', '2023-05-01', 'Huzaifa', '1004'),
+('Agile Development', '05', '2021-06-17', 'Sanaullah', '1005');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
